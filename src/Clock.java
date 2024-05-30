@@ -4,17 +4,20 @@ public class Clock {
 
     private int minutes;
 
+    private int seconds;
+
     public Clock(){
 
     }
 
-   public Clock(int h, int m){
+   public Clock(int h, int m ,int s){
        hours = h;
        minutes = m;
+       seconds = s;
 
    }
 
-    void setTime(int h, int m) {
+    void setTime(int h, int m, int s) {
         if (h > 23) {
             hours = 23;
         } else {
@@ -25,11 +28,16 @@ public class Clock {
         } else {
             minutes = m;
         }
+        if (s > 60) {
+            seconds = 0;
+        } else {
+            seconds = s;
+        }
 
     }
 
     String getTime() {
-        return hours + ":" + minutes;
+        return hours + ":" + minutes + ":" + seconds;
     }
 
     void increaseMinutes(){
@@ -39,6 +47,8 @@ public class Clock {
             hours++;
         }
     }
+
+
 
 
 }
