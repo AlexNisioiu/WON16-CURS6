@@ -11,7 +11,7 @@ public class Main {
         c.setTime(15,25, 15);
         Clock c2 = new Clock();
 
-        Clock customClook = new Clock(3,15 , 25);
+        Clock customClook = new Clock(3,15 , 50);
 
 
         System.out.println(c.getTime());

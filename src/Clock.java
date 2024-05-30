@@ -46,6 +46,12 @@ public class Clock {
             minutes =0;
             hours++;
         }
+
+        seconds++;
+        if(seconds ==60){
+            minutes++;
+
+        }
     }
 
 
