@@ -11,7 +11,7 @@ public class Clock {
         //int variable = 1; - compilation error
         int minutes = 9;
         System.out.println(this.minutes);
-       // System.out.println(minutes);
+        System.out.println(minutes);
     }
 
    public Clock(int h, int m){
