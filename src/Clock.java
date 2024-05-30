@@ -8,24 +8,38 @@ public class Clock {
 
     }
 
-    public Clock(int h, int m){
-        hours = h;
-        minutes = m;
-    }
+   public Clock(int h, int m){
+       hours = h;
+       minutes = m;
 
-    void setTime(int  h, int m){
-        if(h > 23){
+   }
+
+    void setTime(int h, int m) {
+        if (h > 23) {
             hours = 23;
         } else {
             hours = h;
         }
-        if (m >59){
+        if (m > 59) {
             minutes = 59;
         } else {
             minutes = m;
         }
+
     }
-    String getTime(){
+
+    String getTime() {
         return hours + ":" + minutes;
     }
+
+    void increaseMinutes(){
+        minutes++;
+        if(minutes == 60){
+            minutes =0;
+            hours++;
+        }
+    }
+
+
 }
+
