@@ -18,7 +18,6 @@ public class Main {
         customClook.increaseMinutes();
         System.out.println(customClook.getTime());
 
-
     }
 
 }
