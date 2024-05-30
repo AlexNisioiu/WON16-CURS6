@@ -8,15 +8,18 @@ public class Main {
         String s2 = new String("alt test");
 
         Clock c = new Clock();
-        c.setTime(15,25, 15);
+        c.setTime(15,25);
         Clock c2 = new Clock();
 
-        Clock customClook = new Clock(3,15 , 50);
+        Clock customClook = new Clock(3,26);
 
 
         System.out.println(c.getTime());
         customClook.increaseMinutes();
         System.out.println(customClook.getTime());
+
+
+
     }
 
 }
